@@ -74,11 +74,13 @@ stellar contract deploy \
 
 Add screenshots of the UI here.
 
+![Health Tracker UI](image.png)
+
 Example:
 
 ```
 <!-- ![](./screenshots/app.png) -->
-![Health Tracker UI](image.png)
+
 ```
 
 You can create a folder called **screenshots** and place your UI images inside it.
