@@ -1,70 +1,126 @@
 # Healthcare Tracker Frontend
 
-This is a React frontend for interacting with the Soroban HealthTrackerContract deployed on Stellar.
+This is a React frontend for interacting with the Soroban **HealthTrackerContract** deployed on Stellar.
 
-## Features
+---
 
-- Connect Freighter wallet
-- Add health records (steps, calories, heart rate)
-- Retrieve health records by date
+## ✨ Features
 
-## Setup
+* Connect Freighter Wallet
+* Add Health Records (Steps, Calories, Heart Rate)
+* Retrieve Health Records by Date
+* Built with React + Stellar Soroban
 
-1. Install dependencies: `npm install`
-2. Start the development server: `npm start`
+---
 
-## Deploying the Contract
+## ⚙️ Setup
 
-To deploy the contract:
+1. Clone the repository
 
-1. Navigate to `../healthcare/contracts/hello-world`
-2. Run `make build` to build the WASM
-3. Use Stellar CLI to deploy: `stellar contract deploy --wasm target/wasm32v1-none/release/hello_world.wasm --network testnet`
-4. Note the contract ID and enter it in the frontend.
+```
+git clone https://github.com/dark-knightcode/healthtracker-stellar.git
+cd healthtracker-stellar/frontend
+```
 
-# Getting Started with Create React App
+2. Install dependencies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+npm install
+```
 
-## Available Scripts
+3. Start the development server
 
-In the project directory, you can run:
+```
+npm start
+```
 
-### `npm start`
+The app will run at:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+http://localhost:3000
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Deploying the Contract
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To deploy the Soroban contract:
 
-### `npm run build`
+1. Navigate to the contract directory
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+cd ../healthcare/contracts/hello-world
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Build the WASM
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+make build
+```
 
-### `npm run eject`
+3. Deploy using Stellar CLI
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+stellar contract deploy \
+--wasm target/wasm32v1-none/release/hello_world.wasm \
+--network testnet
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Copy the **Contract ID** and paste it into the frontend configuration.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 📸 Application Screenshot
 
-## Learn More
+Add screenshots of the UI here.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Example:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+<!-- ![](./screenshots/app.png) -->
+![Health Tracker UI](image.png)
+```
+
+You can create a folder called **screenshots** and place your UI images inside it.
+
+Example structure:
+
+```
+frontend
+ ├── screenshots
+ │    └── app.png
+ ├── src
+ └── README.md
+```
+
+---
+
+## 👨‍💻 Author
+
+**Paul**
+
+GitHub
+https://github.com/dark-knightcode
+
+
+Email
+[paulscode1@gmail.com](mailto:paulscode1@gmail.com)
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a **star ⭐ on GitHub**.
+
+---
+
+## 📚 Learn More
+
+* React Documentation
+  https://reactjs.org/
+
+* Create React App Documentation
+  https://create-react-app.dev/
+
+* Stellar Soroban Documentation
+  https://soroban.stellar.org
